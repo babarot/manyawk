@@ -1,3 +1,5 @@
+@include "string/prefix.awk"
+
 # dirname returns all but the last element of pathname, typically the pathname's directory.
 function dirname(pathname) {
     if (!sub(/\/[^\/]*\/?$/, "", pathname)) {
