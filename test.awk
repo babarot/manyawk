@@ -3,7 +3,7 @@
 @include "path/filepath.awk"
 
 BEGIN {
-    if (isabs("/path/to/dir")) {
+    if (is_abs("/path/to/dir")) {
         print basename("/path/to/dir")
     }
 }

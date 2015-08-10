@@ -14,7 +14,6 @@ function dirname(pathname) {
 }
 
 # basename returns the last element of pathname.
-# use "../string/prefix.awk"
 function basename(pathname, suffix) {
     sub(/\/$/, "", pathname)
     if (pathname == "") {
@@ -30,8 +29,7 @@ function basename(pathname, suffix) {
     return pathname
 }
 
-# isabs returns true if the path is absolute.
-# use "../string/prefix.awk"
-function isabs(pathname) {
+# is_abs returns true if the path is absolute.
+function is_abs(pathname) {
     return length(pathname) > 0 && has_prefix(pathname, "/")
 }
