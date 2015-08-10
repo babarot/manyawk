@@ -1,0 +1,2 @@
+run:
+	@AWKPATH=. ./test.awk
