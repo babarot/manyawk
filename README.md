@@ -4,7 +4,7 @@
 
 ## Usage
 
-You'll need to set AWKPATH to this library directory root when using manyawk.
+You'll need to set the [AWKPATH](https://www.gnu.org/software/gawk/manual/html_node/AWKPATH-Variable.html#AWKPATH-Variable) environment variable to this library directory root when using manyawk.
 
 ```console
 $ export AWKPATH=$PWD  # this library

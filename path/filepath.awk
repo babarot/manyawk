@@ -4,13 +4,11 @@
 function dirname(pathname) {
     if (!sub(/\/[^\/]*\/?$/, "", pathname)) {
         return "."
-    }
-
-    if (pathname != "") {
+    } else if (pathname != "") {
         return pathname
+    } else {
+        return "/"
     }
-
-    return "/"
 }
 
 # basename returns the last element of pathname.
