@@ -1,4 +1,4 @@
-# capitalize returns capitalized strings
-function capitalize(str) {
-    return toupper(substr(str, 1, 1)) substr(str, 2);
+# capitalize returns capitalized s
+function capitalize(s) {
+    return toupper(substr(s, 1, 1)) substr(s, 2)
 }
