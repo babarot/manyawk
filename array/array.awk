@@ -22,7 +22,7 @@ function sizeof(arr,      i, c) {
 
 function has_value(arr, value,     k) {
     for (k in arr) {
-        if (k[arr] == value) {
+        if (arr[k] == value) {
             return 1
         }
     }
@@ -42,4 +42,24 @@ function join(a,        start, end, sep,      result, i) {
         result = result sep a[i]
     }
     return result
+}
+
+function equals(arr1, arr2) {
+    if (sizeof(arr1) != sizeof(arr2)) {
+        return 0
+    }
+
+    for (i in arr1) {
+        if (arr1[i] != arr2[i]) {
+            return 0
+        }
+    }
+
+    return 1
+}
+
+function clear(arr) {
+    for (i in arr) {
+        delete arr[i]
+    }
 }
