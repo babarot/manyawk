@@ -1,6 +1,6 @@
 # Many AWK
 
-:monkey: manyawk is a AWK library that provides many comprehensive AWK utility functions. 
+:monkey: manyawk is the AWK library that provides many comprehensive AWK utility functions.
 
 ## Usage
 
