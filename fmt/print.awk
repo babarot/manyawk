@@ -1,3 +1,4 @@
+@include "strings/capitalize.awk"
 @include "math/is_num.awk"
 
 # die puts msg to stderr
@@ -17,6 +18,10 @@ function name_to_number(name, predefined) {
 }
 
 function colour(v1, v2, v3) {
+    v1 = capitalize(v1)
+    v2 = capitalize(v2)
+    v3 = capitalize(v3)
+
     fgcolours["None"] = 0;
     fgcolours["Black"] = 30;
     fgcolours["Red"] = 31;
