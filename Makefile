@@ -1,2 +1,2 @@
 run:
-	@AWKPATH=. ./test.awk
+	@AWKPATH=. sample.awk
