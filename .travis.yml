@@ -1,10 +1,10 @@
-language: c
+language: objective-c
 
 install:
-    - sudo apt-get upgrade gawk
+    - brew install gawk
 
 before_script:
-    - awk --version
+    - gawk --version
 
 script:
     - make test
