@@ -1,4 +1,10 @@
 language: c
 
+install:
+    - sudo apt-get install gawk
+
+before_script:
+    - awk --version
+
 script:
     - make test
