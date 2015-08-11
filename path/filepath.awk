@@ -1,4 +1,4 @@
-@include "string/prefix.awk"
+@include "strings/prefix.awk"
 
 # dirname returns all but the last element of pathname, typically the pathname's directory.
 function dirname(pathname) {
