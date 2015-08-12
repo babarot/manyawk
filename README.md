@@ -1,5 +1,12 @@
 # Many AWK
 
+[![](https://img.shields.io/travis/b4b4r07/manyawk.svg?style=flat-square)][travis]
+[![](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
+![](https://img.shields.io/badge/AWK-gawk%204.0%2B-orange.svg?style=flat-square)
+
+[travis]: https://travis-ci.org/b4b4r07/manyawk
+[license]: http://b4b4r07.mit-license.org
+
 :monkey: manyawk is the AWK library that provides many comprehensive AWK utility functions.
 
 ## Description
