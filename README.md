@@ -23,29 +23,31 @@ This manyawk library structure is inspired by [Golang packages](https://golang.o
  - [testing](https://github.com/b4b4r07/manyawk/tree/master/testing)
  - [time](https://github.com/b4b4r07/manyawk/tree/master/time)
 
-## Usage
+## Installation
 
-You'll need to set the [AWKPATH](https://www.gnu.org/software/gawk/manual/html_node/AWKPATH-Variable.html#AWKPATH-Variable) environment variable to this library directory root when using manyawk.
+To get manyawk:
 
 ```console
-$ export AWKPATH=$PWD  # this library
-$ echo $AWKPATH
-/path/to/manyawk
+$ git clone https://github.com/b4b4r07/manyawk
 ```
 
-## How to write script
+Then you'll need to set the [AWKPATH](https://www.gnu.org/software/gawk/manual/html_node/AWKPATH-Variable.html#AWKPATH-Variable) environment variable to this library directory root when using manyawk.
+
+```console
+$ export AWKPATH=/path/to/manyawk    # this library
+```
+
+## Usage
 
 You must load modules from manyawk you want to use and add `@include "module/module.awk"` to your awk script.
 
 ```awk
 #!/usr/bin/env gawk -f
 
-@include "string/leven.awk"
+@include "math/similarity.awk"
 
 BEGIN {
-    str = ARGV[1]
-    subs = ARGV[2]
-    printf("%.4f %\n", (1 - leven_dist(str, subs) / (length(str) + length(subs))) * 100)
+    printf("%f%\n", similarity(ARGV[1], ARGV[2]))
 }
 ```
 
@@ -53,7 +55,7 @@ To save the awk script above as `leven_dist.awk`, and to run:
 
 ```console
 $ AWKPATH=. awk -f leven_dist.awk "awk is fun" "gawk is fun"
-95.2381 %
+95.238095%
 ```
 
 ## License
