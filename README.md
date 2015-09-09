@@ -58,6 +58,11 @@ $ AWKPATH=. awk -f leven_dist.awk "awk is fun" "gawk is fun"
 95.238095%
 ```
 
+## VS.
+
+- [e36freak/awk-libs - GitHub](https://github.com/e36freak/awk-libs)
+- [dubiousjim/awkenough - GitHub](https://github.com/dubiousjim/awkenough)
+
 ## License
 
-[MIT](http://b4b4r07.mit-license.org) (c) BABAROT (a.k.a. b4b4r07)
+[MIT](http://b4b4r07.mit-license.org) © BABAROT (a.k.a. b4b4r07)
