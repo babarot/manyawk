@@ -13,7 +13,7 @@ BEGIN {
 }
 
 BEGIN {
-    fail += assert(has_suffix("abc", "c"), "has_prefix(\"abc\", \"c\") returns true.")
+    fail += assert(has_suffix("abc", "c"), "has_suffix(\"abc\", \"c\") returns true.")
 }
 
 BEGIN {
